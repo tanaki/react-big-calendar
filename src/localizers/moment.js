@@ -31,6 +31,7 @@ export let formats = {
   timeGutterFormat: 'LT',
 
   monthHeaderFormat: 'MMMM YYYY',
+  monthFormat: 'MMMM',
   dayHeaderFormat: 'dddd MMM DD',
   dayRangeHeaderFormat: weekRangeFormat,
   agendaHeaderFormat: dateRangeFormat,
@@ -38,6 +39,8 @@ export let formats = {
   agendaDateFormat: 'ddd MMM DD',
   agendaTimeFormat: 'LT',
   agendaTimeRangeFormat: timeRangeFormat,
+
+  yearHeaderFormat: 'yyyy',
 }
 
 export default function(moment) {

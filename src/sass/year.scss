@@ -1,0 +1,26 @@
+@import './variables';
+
+.rbc-year-view {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .rbc-month {
+    &-full {
+      padding: 1rem;
+      width: 33%;
+    }
+    &-header {
+      justify-content: center;
+    }
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .rbc-day-full {
+    padding: 1rem;
+    text-align: center;
+    width: 14%;
+  }
+}

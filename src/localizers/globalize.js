@@ -37,6 +37,7 @@ export let formats = {
   timeGutterFormat: { time: 'short' },
 
   monthHeaderFormat: 'MMMM yyyy',
+  monthFormat: 'MMMM',
   dayHeaderFormat: 'eeee MMM dd',
   dayRangeHeaderFormat: weekRangeFormat,
   agendaHeaderFormat: dateRangeFormat,
@@ -44,6 +45,8 @@ export let formats = {
   agendaDateFormat: 'eee MMM dd',
   agendaTimeFormat: { time: 'short' },
   agendaTimeRangeFormat: timeRangeFormat,
+
+  yearHeaderFormat: 'yyyy',
 }
 
 export default function(globalize) {

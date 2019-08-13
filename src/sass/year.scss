@@ -18,6 +18,10 @@
       flex-wrap: wrap;
     }
   }
+  .rbc-week-header {
+    display: flex;
+  }
+  .rbc-day-label,
   .rbc-day-full {
     padding: 1rem;
     text-align: center;

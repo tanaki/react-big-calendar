@@ -30,15 +30,28 @@ class Year extends React.Component {
     end = dates.endOf(end, 'week')
 
     let monthRange = dates.range(start, end, 'day')
+    let daysRange = dates.range(start, dates.endOf(start, 'week'), 'day')
 
     return (
       <div className="rbc-month-full" key={idx}>
         <div className="rbc-month-header">
           {localizer.format(start, 'monthFormat')}
         </div>
+        <div className="rbc-week-header">
+          {daysRange.map((day, idxLabel) => this.renderLabel(day, idxLabel))}
+        </div>
         <div className="rbc-month-content">
           {monthRange.map((day, idxDay) => this.renderDay(day, events, idxDay))}
         </div>
+      </div>
+    )
+  }
+
+  renderLabel = (day, idxLabel) => {
+    let { localizer } = this.props
+    return (
+      <div className="rbc-day-label" key={idxLabel}>
+        {localizer.format(day, 'weekdayFormat')}
       </div>
     )
   }
